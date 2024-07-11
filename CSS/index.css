@@ -18,6 +18,7 @@
 /* Variables */
 :root{
     --primary-color: #003d29;
+    --white-color: #fff;
     --text-color: #231f1e;
     --misty-rose: #f9dcdc;
     --white-smoke: #f5f6f6;
@@ -26,7 +27,19 @@
     --light-cyan: #d2f7ec;
     --margin-top: 80px;
 }
+
+/* --- Utility Classes --- */
 .container{
     width: min(90%, 1400px);
     margin-inline: auto;
+    /* background-color: red; */
+}
+.hide-mobile{
+    display: none;
+}
+
+@media screen and (min-width:750px) {
+     .hide-mobile{
+        display: block;
+     }
 }
