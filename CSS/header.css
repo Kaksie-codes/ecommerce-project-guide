@@ -18,6 +18,50 @@
     display: flex;
     gap: 10px;
 }
+.navigation-section-whitebar{
+    background-color: var(--white-color);
+    height: 80px;    
+    /* border-bottom: 1px solid red; */
+}
+.navigation-section-whitebar .hide-mobile{
+    display: none;
+}
+.navigation-section-whitebar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.logo{
+    width: 100px;
+    height: auto;
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+.navigation-section-searchbar-holder{
+    border: #e4e4e4 1px solid;
+    border-radius: 100px;
+    max-width: 400px;
+    height: 40px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+}
+.navigation-section-searchbar-holder input{
+    border: none;
+    outline: none;
+}
+.navigation-section-searchbar-holder input::placeholder{
+    color: #c5c5c5;
+}
+.navigation-section-searchbar-holder i{
+    color: #c5c5c5;
+}
+
 
 @media screen and (min-width:750px) {
     .greenbar{
@@ -42,5 +86,49 @@
         height: 15px;
         width: 2px;
         background-color: var(--white-color);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .navigation-section-whitebar .hide-mobile{
+        display: block;
+    }
+    .categories-btn{
+        border: none;
+        background-color: transparent;
+        outline: none;
+        display: flex;
+        gap: 7px;
+        align-items: center;
+        justify-content: center;
+    }
+    .navigation-whitebar-categories{
+        display: flex !important;
+        gap: 10px;
+    }
+    .navigation-section-account-cart{
+        display: flex !important;
+        gap: 15px;
+    }
+    .navigation-section-account-cart span{
+        display: flex;
+        gap: 7px;
+    }
+    .logo{
+        width: 150px;
+        height: auto;
+    }
+    .red-parent{
+        position: relative;
+    }
+    .red{
+        position: absolute;
+        background-color: red;
+        color: var(--white-color);
+        font-size: 12px;
+        left: -10px;
+        top: -12px;
+        border-radius: 50%;
+        padding: 0 3px;        
     }
 }
