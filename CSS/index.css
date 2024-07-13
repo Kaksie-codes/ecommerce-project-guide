@@ -6,6 +6,7 @@
 
 /* --------- IMPORTING STYLES --------- */
 @import url('header.css');
+@import url('hero-section.css');
 
 /* Resetting styles */
 *{
