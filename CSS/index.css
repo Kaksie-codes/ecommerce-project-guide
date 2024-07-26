@@ -6,6 +6,11 @@
 
 /* --------- IMPORTING STYLES --------- */
 @import url('header.css');
+@import url('categories.css');
+@import url('best-deals.css');
+@import url('get-up.css');
+@import url('footer.css');
+@import url('cart.css');
 @import url('hero-section.css');
 
 /* Resetting styles */
